@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1000px 100vw) auto;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    gap: 15px;
+    padding: 0 23px;
+    text-align: center;
+
+}
+
+.hero> :first-child {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.seperation {
+    background-color: rgba(249, 245, 245, 0.306);
+    height: 7px;
+    position: relative;
+    z-index:20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(50, 50, 50, 0.195);
+    border-color: rgb(244, 240, 240);
+    color: rgb(248, 245, 245);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 4px;
+
+}
+
+.btn-red {
+    background-color: rgb(154, 1, 1);
+    color: white;
+    border-color: rgb(154, 1, 1);
+    padding: 6px 27px 6px 23px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(251, 248, 248, 0.4);
+}
+
+
+.btn-red-sm {
+    background-color: rgb(154, 1, 1);
+    color: white;
+    border-color: rgb(154, 1, 1);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+    color: white;
+
+}
+@media screen and (max-width:1300px){
+    .first{flex-wrap: wrap
+    }
+
+ 
+}
+
+.secimg {
+    position: relative;
+
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index:10;
+
+
+}
+
+.secimg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+
+
+}
+section.first >div{
+    display:flex;
+    flex-direction: column;
+
+}
+section.first>div :first-child{
+    font-size: 38px;
+    font-weight: bolder;
+    }
+section.first>div :nth-child(2){
+    font-size: 24px;
+
+}    
+.faq h2{
+    text-align: center;
+    color: wheat;
+    padding: 12px;
+    font-size: 30px;
+
+
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(46, 45, 45);
+    padding: 15px;
+    font-size: 17px;
+    max-width: 50vw;
+    margin:5px auto;
+    color: white;
+    cursor: pointer;
+
+}
+.faqbox:hover{
+    background-color: rgb(72, 70, 70);
+}
+footer{
+    color: white;
+     max-width: 90vw;
+    margin: auto;
+
+}
+.questions{
+   padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+   
+}
+@media screen and (max-width:1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+}
+.footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
